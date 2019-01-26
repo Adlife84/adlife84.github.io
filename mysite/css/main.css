@@ -1,4 +1,4 @@
-/* ----- Спецификация -----*/
+/* ----- Specification -----*/
 
 body {
 	font-family: 'Roboto', sans-serif;
@@ -6,7 +6,16 @@ body {
 	margin: 0;
 	font-size: 14px;
 	color: #000000;
+	overflow-x: hidden;
 }
+
+.animated {
+	opacity: 0;
+}
+
+/** {
+	transition: all 0.3s ease;
+}*/
 
 ul, li, p {
 	display: block;
@@ -67,13 +76,13 @@ p {
 	text-transform: uppercase;
 	font-size: 17px;
 	font-weight: 900;
-	width: 290px;
 	cursor: pointer;
 	box-shadow: 0px 0px 80px rgba(0,0,0,0.2);
 	border: none;
 	background: #ffde00;
 	font-size: 20px;
 	padding: 0;
+	transition: all 0.3s ease;
 }
 
 .button:hover {
@@ -83,6 +92,20 @@ p {
 
 .button:active {
 	background: #d12424;
+}
+
+.btn_link {
+	font-size: 17px;
+	background: none;
+	margin-left: 20px;
+	text-decoration: underline;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.btn_link i {
+	margin-right: 10px;
+	margin-top: 3px;
 }
 
 .bold {
@@ -99,12 +122,7 @@ p {
 }
 
 
-* {
-	transition: all 0.3s ease;
-}
-
-
-/*First screen*/
+/*	Header Section  */
 
 .header {
 	background: #e0e2de url(../pic/Greywall_bg.jpg) center top;
@@ -172,6 +190,11 @@ p {
 	padding: 3% 5%;
 	color: #000;
 	text-align: center;
+}
+
+.offer-left__button i{
+	margin-right: 10px;
+	margin-top: 3px;
 }
 
 .triangle-down {
@@ -255,7 +278,7 @@ p {
 }
 
 
-/*webdesign section*/
+/*	Webdesign Section  */
 .webdesign {
 	background: #000000;
 	color: #fff;
@@ -305,7 +328,7 @@ p {
 	font-size: 34px;
 }
 
-/*Четвертая секция*/
+/*	Iwillseeyou Section*/
 
 .iwillseeyou {
 	padding-top: 100px;
@@ -344,6 +367,8 @@ p {
 	overflow-x:hidden;
 }
 
+/* Bigline Section*/
+
 .bigline-text {
 	font-size: 92px;
 	text-transform: uppercase;
@@ -354,10 +379,14 @@ p {
 }
 
 
-/*Пятая секция*/
+/* Design Section*/
 
 .design-left {
 	width: 700px;
+}
+
+.design-right {
+	margin-bottom: 20px;
 }
 
 .design__title {
@@ -407,6 +436,7 @@ p {
 .design-lift__title_bold {
 	font-size: 34px;
 	text-transform: uppercase;
+	margin-top: 20px;
 	margin-bottom: 20px;
 }
 
@@ -420,7 +450,7 @@ p {
 }
 
 
-/*Секция #6 ifyou*/
+/*	ifyou section */
 .ifyou {
 	background: #000;
 	color: #fff;
@@ -449,7 +479,7 @@ p {
 }
 
 
-/*Секция №7 Регистрация*/
+/* registration section*/
 
 .registration {
 	background: #ffde00;
@@ -523,7 +553,7 @@ input {
 }
 
 
-/*Footer*/
+/*	Footer Section  */
 
 .footer {
 	padding: 70px 0 60px 0;
@@ -660,7 +690,11 @@ input {
 
 	.questions {
 		width: 100%;
-		padding-bottom: 60px;
+		padding-bottom: 40px;
+	}
+
+	.questions__text {
+    	font-size: 17px;
 	}
 
 	#header .container {
@@ -693,6 +727,7 @@ input {
 	.design-right img {
 		width: 100%;
 		max-width: 471px;
+		margin-bottom: 20px;
 	}
 
 
@@ -809,7 +844,7 @@ input {
 
 	.offer-left__button {
 		width: 90%;
-		margin-bottom: 30px;
+		margin-bottom: 10px;
 	}
 
 	.offer-left {
@@ -818,6 +853,10 @@ input {
 
 	h2 {
 		font-size: 30px;
+	}
+
+	.btn_link {
+		text-align: center;
 	}
 
 
