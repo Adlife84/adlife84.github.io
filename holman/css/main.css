@@ -1,0 +1,330 @@
+/* ----- Specification -----*/
+
+body {
+	font-family: serif;
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+	color: #000000;
+	font-size: 14px;
+	font-family: Gotham Light Regular;
+}
+
+* {
+	transition: all 0.3s ease;
+}
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+ul, li, p {
+	display: block;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	/*box-sizing: border-box;*/
+	margin: 0;
+	padding: 0;
+	font-family: Gotham-Black;
+}
+
+h2 {
+	font-size: 24px;
+	color: #0C3558;
+}
+
+a {
+	text-decoration: none;
+	display: block;
+}
+
+
+div, section, form, button, span, p {
+	box-sizing: border-box;
+}
+
+section {
+	
+}
+
+button, input, input:hover, input:active, input:focus {
+	outline: none;
+	font-family: 'Open Sans', sans-serif;
+	padding: 0 0 0 30px;
+}
+
+
+.flex {
+	display: flex;
+}
+
+.button {
+	color: #0C3558;
+	width: 170px;
+	font-size: 15px;
+	text-align: center;
+	border: 2px solid #0B2D50;
+	border-radius: 3px;
+	padding: 20px 0;
+	margin-bottom: 10px;
+	margin-right: 20px;
+	text-transform: uppercase;
+	letter-spacing: 1.8px;
+	font-family: Gotham Light Regular;
+}
+
+
+.btn_red {
+	color: #fff;
+	background: #EA1921;
+	padding: 10px 0;
+	font-family: Gotham Black Regular;
+	border: 2px solid #EA1921;
+}
+
+.btn_red:hover {
+	background: #BF1921;
+	border: 2px solid #BF1921;
+}
+
+.no_border {
+	border: none;
+}
+
+
+/* ----- Header -----*/
+
+.header {
+	padding-top: 20px;
+}
+
+.header_wrapper {
+	
+}
+
+.header_bg {
+	padding-top: 20px;
+	background: #e0e2de url(../img/header_bg.jpg) center top;
+	height: 500px;
+}
+
+.logo {
+	margin-right: 300px;
+}
+
+.logo img{
+	width: 113px;
+	height: 113px;
+}
+
+.logo_description {
+	width: 130px;
+	margin-left: 40px;
+	font-size: 30px;
+	color: #0B2D50;
+	font-family: Gotham-Black;
+}
+
+.nav {
+	background: #0C3558;
+	margin-top: 10px;
+	margin-bottom: 60px;
+}
+
+.main_menu {
+	color: #fff;
+	justify-content: space-around;
+}
+
+.main_menu a {
+	text-align: center;
+	font-size: 18px;
+	padding: 15px 20px;
+	color: #fff;
+	font-family: Gotham Light Regular;
+}
+
+.header_block {
+	color: #fff;
+	width: 368px;
+	background: #0C3558;
+	padding: 38px;
+}
+
+.header_title {
+	font-size: 24px;
+	font-family: Gotham-Black;
+	color: #fff;
+}
+
+.header_text {
+	text-transform: none;
+	font-size: 18px;
+	font-family: Gotham Light Regular;
+	margin-top: 30px;
+}
+
+/* ----- Second_menu section-----*/
+
+.second_menu {
+	color: #fff;
+	background: #0C3558;
+	padding: 25px 0 22px 0;
+}
+
+.second_menu__item {
+	width: 260px;
+	text-align: center;
+	font-family: Gotham Light Regular;	
+}
+
+.second_menu__title {
+	font-size: 18px;
+	font-family: Gotham-Black;
+}
+
+.second_menu__text {
+	font-size: 14px;
+	margin: 20px 0 15px 0;
+	line-height: 1.6;
+}
+
+.btn_white {
+	color: #fff;
+	padding: 10px 0;
+	border: 2px solid #fff;
+	font-size: 14px;
+	margin: 0 auto;
+	font-family: Gotham-Black;
+}
+
+
+/* ----- News Section-----*/
+
+.news {
+	padding: 65px 0;
+	background: #E2E8ED;
+}
+
+.news_reverse {
+	padding: 65px 0;
+}
+
+.news_block__img {
+	margin-right: 30px;
+}
+
+.news_block__title {
+	padding-bottom: 10px;
+}
+
+.news_block__text {
+	line-height: 1.6;
+	margin-bottom: 30px;
+}
+
+.news_block__list {
+	line-height: 2;
+}
+
+.news__title {
+	display: inline-block;
+	padding-bottom: 6px;
+	border-bottom: 2px solid #0C3558; 
+	margin-bottom: 35px;
+}
+
+.news_block__list li {
+	display: list-item;
+	list-style-position: inside;
+}
+
+.news_btn {
+	margin-top: 60px;
+	line-height: 1.6;
+	width: 330px;
+	padding: 10px 20px;
+	font-size: 14px;
+}
+
+/* ----- Clients Story Section-----*/
+
+.clientstory {
+	background: #0C3558;
+	padding: 50px 0 35px 0;
+}
+
+.clientstory__title {
+	width: 585px;
+	color: #fff;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+/* ----- Footer Section-----*/
+
+.footer {
+	background: #999999;
+	padding: 40px 0;
+}
+
+.footer a {
+	color: #000;
+	line-height: 1.8;
+}
+
+.footer_list {
+	justify-content: space-between;
+}
+
+.footer_item {
+
+}
+
+.icon {
+	width: 40px;
+	height: 40px;
+	font-size: 22px;
+	color: #999999;
+	background: #2D2D2D;
+	border-radius: 100%;
+	text-align: center;
+	padding-top: 8px;
+	flex-direction: column;
+	display: inline-block;
+}
+
+.sertificate {
+	text-align: right;
+}
+
+
+/* ----- Copyright Section-----*/
+
+.copyright {
+	padding: 10px 0;
+	color: #fff;
+	background: #2D2D2D;
+}
+
+
+.copyright ul {
+	justify-content: flex-end;
+}
+
+.copyright p {
+	margin-left: 300px;
+}
+
+.copyright a {
+	color: #fff;
+	margin-right: 40px;
+}
+
+
