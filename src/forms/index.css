@@ -1,0 +1,27 @@
+body {
+  background: url(/icons/wave-background-png--1230.png) round;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 56px;
+  color: rgb(19, 111, 197);
+}
+
+img {
+  width: 1.3em;
+}
+
+.register_img {
+  width: 400px;
+}
+
+.btn-reserve {
+  display: block;
+}
+
+.wrapper {  
+  margin-top: 200px;
+  text-align: center;
+}

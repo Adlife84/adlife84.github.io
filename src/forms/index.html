@@ -1,0 +1,260 @@
+<DOCTYPE! HTML>
+  <html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Andrei's Forms</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    </link>
+  </head>
+
+  <body>
+    <div>
+      <div class="wrapper">
+        <h1>Form templates</h1>
+        <img class="register_img" src="/icons/Registration_icon_1.png" alt="">
+        <div class="buttons">
+          <!-- Reservetion Button trigger modal -->
+          <button type="button" class="btn btn-outline-info" data-toggle="modal"
+            data-target="#modal-reservetion">Reservetion</button>
+
+          <!-- Application Button trigger modal -->
+          <button type="button" class="btn btn-outline-info" data-toggle="modal"
+            data-target="#modal-application">Application</button>
+        </div>
+      </div>
+
+
+
+
+
+
+      <!-- Reservetion modal -->
+      <div class="modal fade " id="modal-reservetion" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content p-3">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Reservetion</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <form>
+              <div class="modal-body">
+                <div class="form-group form-row">
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="First name" required>
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Last name" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <img src="/icons/phone.svg" alt="Phone Icon">
+                      </span>
+                    </div>
+                    <input type="phone" class="form-control" id="inputPhone" placeholder="Format: 1234567890"
+                      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <img src="/icons/email.png" alt="Phone Icon">
+                      </span>
+                    </div>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <img src="/icons/calendar.png" alt="Phone Icon">
+                      </span>
+                    </div>
+                    <input type="date" class="form-control" id="inputDate" placeholder="dd/mm/2020" required>
+                  </div>
+                </div>
+                <!-- Form group row with Time and Person Selectors -->
+                <div class="form-group">
+                  <div class="form-row">
+                    <div class="input-group col">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">
+                          <img src="/icons/clock.svg" alt="Phone Icon">
+                        </span>
+                      </div>
+                      <select class="input-group-text custom-select" id="inlineFormCustomSelectPref" required>
+                        <option selected>10:00 AM</option>
+                        <option value="10:30 AM">10:30 AM</option>
+                        <option value="11:00 AM">11:00 AM</option>
+                        <option value="11:30 AM">11:30 AM</option>
+                        <option value="12:00 AM">12:00 AM</option>
+                        <option value="12:30 AM">1:30 PM</option>
+                        <option value="13:00 AM">2:00 PM</option>
+                        <option value="10:00 AM">2:30 PM</option>
+                        <option value="10:00 AM">3:00 PM</option>
+                        <option value="10:00 AM">3:30 PM</option>
+                        <option value="10:00 AM">4:00 PM</option>
+                        <option value="10:00 AM">4:30 PM</option>
+                        <option value="10:00 AM">5:00 PM</option>
+                        <option value="10:00 AM">5:30 PM</option>
+                        <option value="10:00 AM">6:00 PM</option>
+                        <option value="10:00 AM">6:30 PM</option>
+                        <option value="10:00 AM">7:00 PM</option>
+                        <option value="10:00 AM">7:30 PM</option>
+                        <option value="10:00 AM">8:00 PM</option>
+                        <option value="10:00 AM">8:30 PM</option>
+                        <option value="10:00 AM">9:00 PM</option>
+                        <option value="10:00 AM">9:30 PM</option>
+                        <option value="10:00 AM">10:00 PM</option>
+                        <option value="10:00 AM">10:30 PM</option>
+                        <option value="10:00 AM">11:00 PM</option>
+                        <option value="10:00 AM">11:30 PM</option>
+                        <option value="10:00 AM">00:00 AM</option>
+                      </select>
+                    </div>
+                    <div class="input-group col">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">
+                          <img src="/icons/person.svg" alt="Phone Icon">
+                        </span>
+                      </div>
+                      <select class="custom-select" id="inlineFormCustomSelectPref" required>
+                        <option selected value="1">1 person</option>
+                        <option value="2">2 people</option>
+                        <option value="3">3 people</option>
+                        <option value="4">4 people</option>
+                        <option value="5">5 people</option>
+                        <option value="6">6 people</option>
+                        <option value="7">7 people</option>
+                        <option value="8">8 people</option>
+                        <option value="9">9 people</option>
+                        <option value="10">10 people</option>
+                        <option value="11">11 people</option>
+                        <option value="12">12 people</option>
+                        <option value="13">13 people</option>
+                        <option value="14">14 people</option>
+                        <option value="15">15 people</option>
+                        <option value="16">16 people</option>
+                        <option value="17">17 people</option>
+                        <option value="18">18 people</option>
+                        <option value="19">19 people</option>
+                        <option value="20">20 people</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-outline-info btn-reserve mx-auto">Reserve</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Aplication modal -->
+      <div class="modal fade" id="modal-application" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title mx-auto" id="exampleModalLabel">We are happy that you want to be part of our team
+              </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <form>
+              <div class="modal-body">
+                <div class="form-group form-row">
+                  <div class="col">
+                    <label for="inputName">Name</label>
+                    <input id="inputName" type="text" class="form-control" required>
+                  </div>
+                  <div class="col">
+                    <label for="inputLastName">Last Name</label>
+                    <input id="inputLastName" type="text" class="form-control" required>
+                  </div>
+                </div>
+                <div class="form-group form-row">
+                  <div class="col">
+                    <label for="inputEmail">Email address</label>
+                    <input id="inputEmail" type="text" class="form-control" placeholder="name@example.com" required>
+                  </div>
+                  <div class="col">
+                    <label for="inputPhone">Phone</label>
+                    <input id="inputPhone" type="text" class="form-control" placeholder="Format: 1234567890"
+                      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inlineFormCustomSelectPref">Position Aplied</label>
+                  <select class="custom-select" id="inlineFormCustomSelectPref" required>
+                    <option selected>-Position-</option>
+                    <option value="2">Volunteer</option>
+                    <option value="3">Web Designer</option>
+                    <option value="4">Full stack Developer</option>
+                    <option value="5">Team Lead</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked"
+                      required>
+                    <label class="custom-control-label" for="customControlValidation2">Full-Time</label>
+                  </div>
+                  <div class="custom-control custom-radio mb-3">
+                    <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked"
+                      required>
+                    <label class="custom-control-label" for="customControlValidation3">Part-Time</label>
+                    <div class="invalid-feedback">More example invalid feedback text</div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">What are your workplace skills?</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlFile1">Upload your resume and a list of references:</label>
+                  <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-outline-info px-5">Send</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+      </script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="test.js"></script>
+  </body>
+
+  </html>
